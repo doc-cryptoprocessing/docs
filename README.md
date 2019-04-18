@@ -6,16 +6,39 @@ CoinsPaid is an organisation providing Cryptocurrency payment services, we enabl
 
 What makes us better than others?
 
-* Over 50 crypto-assets including popular "stable coins"
-* Simple and quick API for all operations
-* Competitive pricing
-* Yearly security audits from independent company
-* Ready-to-implement business solutions
-* 24/7 technical support
-* Extensive Financial reporting for ease of reconciliation
-* Different access levels for your employees
-* Training materials provided to get your team up to speed
+* Simple and quick API for all operations 
+* Competitive pricing 
+* Yearly security audits from independent third party 
+* Turnkey business solutions 24/7 technical support 
+* Comprehensive financial reporting for ease of reconciliation 
+* Tiered access levels for your employees 
+* Training material for team education 
 * Instant transaction confirmations for popular currencies
-* Loyalty program
-* Blockchain based risk scoring that your MRLO will love
+* Loyalty program 
+* Blockchain-based risk score
+
+Supported crypto currencies:
+
+* BTC - Bitcoin
+* LTC - Litecoin
+* BCH - Bitcoin cash
+* DASH - Dash
+* ADA - Cardano
+* ETH - Ethereum
+* ETC - Ethereum classic
+* DOGE - Dogecoin
+* NEO - Neo
+* XMR - Monero
+* XRP - Ripple
+* ZEC - Zcash
+* USDT - Tether. Most popular "stablecoin", price fluctuating around 1 USD.
+* ERC20 token\(s\) can be added by request
+
+Supported Fiat currencies
+
+* EUR - Euro
+
+Available trading Pairs
+
+* BTC/EUR
 
