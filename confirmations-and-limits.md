@@ -3,7 +3,7 @@
 Here you can find confirmation times for crypto deposits and min/max limits.
 
 {% hint style="danger" %}
-Please note that **min limits** for exchange operations must be **obtained via API** \(see [this API call](api-documentation/v2.md#get-list-of-exchangeable-currency-pairs)\) because they may vary dynamic. Limits for min deposits and withdrawals can [must be obtained via API](api-documentation/v2.md#get-list-of-supported-currencies) too, though they are not changed very often.
+Please note that **min limits** for exchange operations must be **obtained via API** \(see [this API call](api-documentation/v2.md#get-list-of-exchangeable-currency-pairs)\) because they may vary dynamically. Limits for min deposits and withdrawals can [must be obtained via API](api-documentation/v2.md#get-list-of-supported-currencies) too, though they do not change often.
 {% endhint %}
 
 | Currency | Confirmations | Min deposit | Min withdrawal | Notes |
