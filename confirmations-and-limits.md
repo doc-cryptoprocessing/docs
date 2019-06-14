@@ -9,7 +9,7 @@ Please note that **min limits** for exchange operations must be **obtained via A
 | Currency | Confirmations | Min deposit | Min withdrawal | Notes |
 | :--- | :--- | :--- | :--- | :--- |
 | ADA | 15 | 0.01 | 0.01 | [explorer](https://cardanoexplorer.com/) |
-| BTC | 0/1 | 0.0001 | 0.001 | [explorer](https://www.blockchain.com/explorer) |
+| BTC | 0/1 | 0.0001\* | 0.001 | [explorer](https://www.blockchain.com/explorer) |
 | BCH | 6 | 0.001 | 0.001 | [explorer](https://explorer.bitcoin.com/bch) |
 | LTC | 6 | 0.01 | 0.01 | [explorer](https://live.blockcypher.com/ltc/) |
 | DOGE | 6 | 0.01 | 0.01 | [explorer](https://live.blockcypher.com/doge/) |
@@ -22,4 +22,6 @@ Please note that **min limits** for exchange operations must be **obtained via A
 | NEO | 10 | 1 | 1 | [explorer](https://neotracker.io/) |
 | USDT | 6 | 0.0001 | 0.001 | [explorer](https://omniexplorer.info/) |
 | OMNIBTC | 6 | 0.001 | 0.001 | [explorer](https://www.blockchain.com/explorer) |
+
+\*Minimal amount for a deposit with exchange  is 0.003 BTC. Deposits below minimal will not be credited.
 
