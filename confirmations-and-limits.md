@@ -23,5 +23,5 @@ Please note that **min limits** for exchange operations must be **obtained via A
 | USDT | 6 | 0.0001 | 0.001 | [explorer](https://omniexplorer.info/) |
 | OMNIBTC | 6 | 0.001 | 0.001 | [explorer](https://www.blockchain.com/explorer) |
 
-\*Minimal amount for a deposit with exchange  is 0.003 BTC. Deposits below minimal will not be credited.
+\*Minimal amount for a deposit with exchange  is 0.003 BTC. Deposits below minimum will not be credited.
 
