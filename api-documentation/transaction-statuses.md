@@ -9,8 +9,7 @@ description: Possible statuses and their meaning
 **confirmed - final. Transaction is approved.  
 not\_confirmed - transaction pending.  
 not\_enough\_fee - transaction needs attention from client's team.  
-cancelled - final. Transaction will not get approved.  
-processing - transaction is being processed by CoinsPaid.**
+cancelled - final. Transaction will not get approved.**
 
 transitions:
 
