@@ -2,7 +2,6 @@
 
 * [General description](README.md)
 * [API Documentation](api-documentation/README.md)
-  * [Transaction statuses](api-documentation/transaction-statuses.md)
   * [Obtaining API Keys](api-documentation/obtaining-api-keys.md)
   * [Callbacks](api-documentation/callbacks.md)
   * [Authorization](api-documentation/authorization.md)
