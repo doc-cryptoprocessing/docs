@@ -13,8 +13,8 @@ Please note that **min limits** for exchange operations must be **obtained via A
 | BCH | 6 | 0.001 | 0.001 | [explorer](https://explorer.bitcoin.com/bch) |
 | LTC | 6 | 0.01 | 0.01 | [explorer](https://live.blockcypher.com/ltc/) |
 | DOGE | 6 | 0.01 | 0.01 | [explorer](https://live.blockcypher.com/doge/) |
-| ETH | 30 | 0.01 | 0.01 | [explorer](http://etherscan.io/) |
-| ETC | 30 | 0.01 | 0.01 | [explorer](https://gastracker.io/) |
+| ETH | 25 | 0.01 | 0.01 | [explorer](http://etherscan.io/) |
+| ETC | 25 | 0.01 | 0.01 | [explorer](https://gastracker.io/) |
 | DASH | 6 | 0.01 | 0.01 | [explorer](https://live.blockcypher.com/dash/) |
 | ZEC | 24 | 0.01 | 0.01 | [explorer](https://explorer.zcha.in/) |
 | XMR | 10 | 0.01 | 0.01 | [explorer](https://moneroblocks.info/) |
@@ -22,6 +22,11 @@ Please note that **min limits** for exchange operations must be **obtained via A
 | NEO | 10 | 1 | 1 | [explorer](https://neotracker.io/) |
 | USDT | 6 | 0.0001 | 0.001 | [explorer](https://omniexplorer.info/) |
 | OMNIBTC | 6 | 0.001 | 0.001 | [explorer](https://www.blockchain.com/explorer) |
+| ERC20 | 25 | 0.01 | 0.01 | [explorer](http://etherscan.io/) |
 
 \*Minimal amount for a deposit with exchange  is 0.003 BTC. Deposits below minimum will not be credited.
+
+{% hint style="info" %}
+Number of confirmations can be more than value in table in cases when several blocks are released in a short period of time.
+{% endhint %}
 
