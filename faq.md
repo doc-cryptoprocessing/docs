@@ -40,7 +40,9 @@ Integration is free. We only charge transaction fees. Transaction types are: dep
 
 ### **What alternative payments do you support?**
 
-At the moment we accept more than 50 altcoins \(BTC, BCH, LTC, ETH, ETC, XMR, XRP, ZEC, NEO, ADA, DOGE, DASH, USDT\) and ERC20 tokens. Also we have direct bank wire for deposits and withdrawals in EUR.                         ****We are working on adding more currencies and alternative payment methods like credit cards, SWIFT and popular e-money services.
+At the moment we accept more than 50 altcoins \(BTC, BCH, LTC, ETH, ETC, XMR, XRP, ZEC, NEO, ADA, DOGE, DASH, USDT\) and ERC20 tokens. Also we have direct bank wire for deposits and withdrawals in EUR.
+
+We are working on adding more currencies and alternative payment methods like credit cards, SWIFT and popular e-money services.
 
 ### **How can I convert all these different coins to BTC?**
 
@@ -60,7 +62,11 @@ We do. We are ready to discuss individual terms based on your resources.Also you
 
 ### **Is it safe to keep our money in your wallet?**
 
-Absolutely. Customer funds are stored in an offline cold wallet, which is protected from cyber attacks.                                                                   Operational, or “hot” wallet, holds funds required for automated operations, such as multiple payments to your clients. This wallet holds the CoinsPaid operational funds. So we have you covered.                            Prior to integration, the operator decides how much money he wants to keep in our system, thereby setting storage limits. All funds exceeding these limits \(bankroll\) will be automatically transferred to the operator's external address.  
+Absolutely. Customer funds are stored in an offline cold wallet, which is protected from cyber attacks.
+
+Operational, or “hot” wallet, holds funds required for automated operations, such as multiple payments to your clients. This wallet holds the CoinsPaid operational funds. So we have you covered.
+
+Prior to integration, the operator decides how much money he wants to keep in our system, thereby setting storage limits. All funds exceeding these limits \(bankroll\) will be automatically transferred to the operator's external address.  
   
 
 
