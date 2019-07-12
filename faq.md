@@ -16,7 +16,15 @@ We are not registered as a money or financial institution; moreover, we do not h
 
 ### **How can I test your service?**
 
-We can provide you with a trial account at CoinsPaid, where you can familiarise yourself with the merchant dashboard and test all the tools, but some pre-test steps are required from you:                                                      1\) Download a testnet Bitcoin wallet.                                                                 2\) Get testnet\* coins by visiting this website[ https://testnet.coinfaucet.eu/en/](https://testnet.coinfaucet.eu/en/) and entering your address, generated in the testnet Bitcoin wallet.                                                                                     3\) Wait for 1 confirmation to be able to spend test coins.                        \*Please note that Testnet Bitcoins are never supposed to have any value. More information about Bitcoin testnet is available[ here](https://en.bitcoin.it/wiki/Testnet).
+We can provide you with a trial account at CoinsPaid, where you can familiarise yourself with the merchant dashboard and test all the tools, but some pre-test steps are required from you:
+
+1\) Download a testnet Bitcoin wallet.
+
+2\) Get testnet\* coins by visiting this website[ https://testnet.coinfaucet.eu/en/](https://testnet.coinfaucet.eu/en/) and entering your address, generated in the testnet Bitcoin wallet.
+
+3\) Wait for 1 confirmation to be able to spend test coins.
+
+\*Please note that Testnet Bitcoins are never supposed to have any value. More information about Bitcoin testnet is available[ here](https://en.bitcoin.it/wiki/Testnet).
 
 ### **How do I get a business account with CoinsPaid?**
 
