@@ -33,6 +33,7 @@ Supported crypto currencies:
 * ZEC - Zcash
 * USDT - Tether. Most popular "stablecoin", price fluctuating around 1 USD.
 * ERC20 token\(s\) can be added by request
+* XIN - Infinity Economics
 
 Supported Fiat currencies
 
