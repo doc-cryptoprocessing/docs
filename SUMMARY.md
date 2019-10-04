@@ -10,5 +10,6 @@
   * [Client libraries](api-documentation/client-libraries.md)
 * [Confirmations and limits](confirmations-and-limits.md)
 * [Crosschain recovery policy](crosschain-recovery-policy.md)
-* [FAQ](faq.md)
+* [FAQ](faq/README.md)
+  * [QR Codes Implementation](faq/qr-codes-implementation.md)
 
