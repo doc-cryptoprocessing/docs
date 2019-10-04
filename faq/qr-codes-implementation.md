@@ -148,7 +148,7 @@ To make this experience even better, it will be a good idea to provide the payme
 
 As a result it will be a good form that may look like this:
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/deposit-or-bitstarz.com-2019-10-04-15-31-35.png)
 
 
 
