@@ -31,14 +31,17 @@ Supported crypto currencies:
 * XMR - Monero
 * XRP - Ripple
 * ZEC - Zcash
+* REP - Augur
 * USDT - Tether. Most popular "stablecoin", price fluctuating around 1 USD.
+* USDTE - Tether USD ERC20 token
+* EURTE - Tether EUR ERC20 token
 * ERC20 token\(s\) can be added by request
 * XIN - Infinity Economics
 * BNB - Binance Coin
 
 Supported Fiat currencies
 
-* EUR - Euro
+EUR, USD, CAD, SEK, AUD, NOK, CHF, RUB, CNY, JPY, NZD, MXN, ARS, BRL, GBP, INR, KRW, THB, VND, IDR, MYR, PEN, CLP, KZT, UAH
 
 Available trading Pairs
 
