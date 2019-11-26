@@ -66,7 +66,7 @@ If the user has the crypto wallet application on the same device, he should:
 5. Click a "Send" button to transfer his money
 
 {% hint style="danger" %}
-The more actions user should make the more probably he would not pay. That is why **the crypto address has to be presented at least as a clickable link** using a specific URI format \(see the [What is a crypto wallet URI format?](https://merkeleon.atlassian.net/wiki/spaces/CP/pages/1218445425/QR+code+implementation#QRcodeimplementation-uri) section\).
+The more actions user should make the more probably he would not pay. That is why **the crypto address has to be presented at least as a clickable link** using a specific URI format \(see the [What is a crypto wallet URI format?](https://docs.coinspaid.com/docs/faq/qr-codes-implementation#QRcodeimplementation-WhatisacryptowalletURIformat?) section\).
 {% endhint %}
 
 ## What is a QR code? <a id="QRcodeimplementation-WhatisaQRcode?"></a>
@@ -104,7 +104,7 @@ Detailed description can be found here:
 [https://developers.google.com/chart/infographics/docs/qr\_codes](https://developers.google.com/chart/infographics/docs/qr_codes)
 {% endhint %}
 
-In order to create the QR code we can use Google Chart Service and encode the URI described in [What is a crypto wallet URI format?](https://merkeleon.atlassian.net/wiki/spaces/CP/pages/1218445425/QR+code+implementation#QRcodeimplementation-uri) section.
+In order to create the QR code we can use Google Chart Service and encode the URI described in [What is a crypto wallet URI format?](https://docs.coinspaid.com/docs/faq/qr-codes-implementation#QRcodeimplementation-WhatisacryptowalletURIformat?) section.
 
 To create simple QR code including the link to the bitcoin address the following parameters should be used:  
 [https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=bitcoin:3AFaCnqriLNxj15kqtp5Pxn8puHfuqbX7W&choe=UTF-8](https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=bitcoin:3AFaCnqriLNxj15kqtp5Pxn8puHfuqbX7W&choe=UTF-8)
