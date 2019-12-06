@@ -22,15 +22,12 @@ Supported crypto currencies:
 * BTC - Bitcoin
 * LTC - Litecoin
 * BCH - Bitcoin cash
-* DASH - Dash
 * ADA - Cardano
 * ETH - Ethereum
 * ETC - Ethereum classic
 * DOGE - Dogecoin
 * NEO - Neo
-* XMR - Monero
 * XRP - Ripple
-* ZEC - Zcash
 * REP - Augur
 * USDT - Tether. Most popular "stablecoin", price fluctuating around 1 USD.
 * USDTE - Tether USD ERC20 token
