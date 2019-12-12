@@ -4,7 +4,7 @@
 
 When we are talking about cryptocurrencies as a payment method, we should keep in mind that it's payment workflow differs from classic payment methods like bank cards or e-wallets. As a result, one who are going to use this payment method in his web-service or application have to know small tips how to make the payment process comfortable and simple.
 
-In this section we would like to share our knowledges how to work with cryptocurrencies efficiently. We also described there the most important information about implementation scenarios of Coinspad API.
+In this section we would like to share our knowledges how to work with cryptocurrencies efficiently. We also described there the most important information about implementation scenarios of Coinspaid API.
 
 ## Deposits
 
