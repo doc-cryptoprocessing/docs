@@ -68,11 +68,3 @@ Operational, or “hot” wallet, holds funds required for automated operations,
 
 Prior to integration, the operator decides how much money he wants to keep in our system, thereby setting storage limits. All funds exceeding these limits \(bankroll\) will be automatically transferred to the operator's external address.
 
-### What are the best practices for using QR codes? 
-
-The main idea is to provide a user with QR code that he can use as an automatic way to open his wallet application and send a cryptocurrency in one click.
-
-A detailed description can be found in the corresponding section of this documentation: [QR Codes Implementation](qr-codes-implementation.md)  
-  
-
-

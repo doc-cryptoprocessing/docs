@@ -1,16 +1,16 @@
 ---
-description: How to increase the payment form conversion rate and total overall
+description: How to increase the payment form conversion rate and total turnover
 ---
 
-# QR Codes Implementation
+# What is crypto payment form?
 
 ## Introduction <a id="QRcodeimplementation-Introduction"></a>
 
-Among the best practices of working with cryptocurrencies there is a one that highly increases the payment form conversion rate and total overall.
+Among the best practices of working with cryptocurrencies there are some recommendations how to highly increase the payment form conversion rate and total turnover.
 
-The main idea is to provide a user with QR code that he can use as an automatic way to open his wallet application and send a cryptocurrency in one click.
+As you may know, a payment form for crypto payments differs from classic payment methods. Users can send their money using exchanges and crypto wallet applications instead of classic payment forms. Crypto payment form is a block with the information about payment conditions and crypto address where funds should be sent. The main idea is to provide a user with deposit crypto address and all necessary information about deposit limits, exchange rates and other payment conditions. Also it will be a good idea to provide crypto address using QR code that user can use as an automatic way to open his wallet application and send a cryptocurrency in one click.
 
-The most important features of this method are:
+The most important features of using QR codes are:
 
 1. Quick access from the mobile devices
 2. Predefined cryptocurrency 
@@ -20,6 +20,8 @@ Optional features are:
 
 1. Predefined amount
 2. Inline comments with the payment description
+
+In this section you will know how to provide the user with all necessary information, how to implement QR codes to your payment form and what best practices exist in order to make the payment form userfriendly, to increase its conversion rate and to avoid user's mistakes.
 
 ## What is a crypto wallet URI format? <a id="QRcodeimplementation-WhatisacryptowalletURIformat?"></a>
 
@@ -126,7 +128,7 @@ When user scans this QR code he will be able to open the wallet application and 
 
 ## Best practice as a result <a id="QRcodeimplementation-Bestpracticeasaresult"></a>
 
-In this article we described how to increase the conversion rate and as a result total overall of the payment form for two scenarios. To be sure that the users will have a good experience in both cases all we need is to combine these two methods and use them on the payment form in the same time.
+In this article we described how to increase the conversion rate and as a result total turnover of the payment form for two scenarios. To be sure that the users will have a good experience in both cases all we need is to combine these two methods and use them on the payment form in the same time.
 
 **So, the last step is to make the QR code clickable.**
 
