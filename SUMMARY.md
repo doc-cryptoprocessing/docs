@@ -1,8 +1,8 @@
 # Table of contents
 
 * [General description](README.md)
-* [Integration guide](best-practices/README.md)
-  * [What is crypto payment form?](best-practices/qr-codes-implementation.md)
+* [Integration guide](integration-guide/README.md)
+  * [What is crypto payment form?](integration-guide/crypto-payment-form.md)
 * [API Documentation](api-documentation/README.md)
   * [Obtaining API Keys](api-documentation/obtaining-api-keys.md)
   * [Callbacks](api-documentation/callbacks.md)

@@ -53,7 +53,7 @@ Sometime users make mistakes and send the money using specific cryptocurrency to
 
 In order to increase the conversion rate for crypto payments we have a special guide how you can develop your payment form and provide the user with the best experience of crypto payments. There are good recommendations how to build friendly and comfrotable interaction with your interface for the user. Here you can find how it can be implemented:
 
-{% page-ref page="qr-codes-implementation.md" %}
+{% page-ref page="crypto-payment-form.md" %}
 
 {% hint style="info" %}
 #### Hint 1
