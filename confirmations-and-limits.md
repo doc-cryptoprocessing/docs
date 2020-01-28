@@ -21,6 +21,7 @@ Please note that **min limits** for exchange operations must be **obtained via A
 | OMNIBTC | 6 | 0.001 | 0.001 | [explorer](https://www.blockchain.com/explorer) |
 | ERC20 | 25 | 0.01 | 0.01 | [explorer](http://etherscan.io/) |
 | BNB | almost instant | 0.01 | 0.1 | [explorer](http://etherscan.io/) |
+| BSV | 6 | 0.001 | 0.001 | [explorer](https://blockchair.com/) |
 
 {% hint style="info" %}
 Number of confirmations can be more than value in table in cases when several blocks are released in a short period of time.

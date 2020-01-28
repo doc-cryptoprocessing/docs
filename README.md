@@ -35,7 +35,6 @@ Supported crypto currencies:
 * ERC20 token\(s\) can be added by request
 * XIN - Infinity Economics
 * BNB - Binance Coin
-* BSV - Bitcoin SV
 
 Supported Fiat currencies
 
