@@ -1,12 +1,20 @@
 # Obtaining API Keys
 
-Please navigate to your Merchant dashboard and find section called “Api keys”
+Please navigate to your Merchant dashboard, find section called “API keys” and click "Activate" .
 
-![](../.gitbook/assets/snimok-ekrana-2019-03-19-v-18.48.05.png)
+![](../.gitbook/assets/image%20%281%29.png)
+
+In order to activate your API key and see your secret enter 2FA code and click "Activate".
+
+![](../.gitbook/assets/image%20%284%29.png)
+
+After activation you will see your secret.
+
+![](../.gitbook/assets/image%20%288%29.png)
 
 {% hint style="danger" %}
-Please note that after copying API keys, we **strongly recommend** you to click “Hide”. Secret  will be hidden and you **won’t be able to restore**, please save in a secure place and avoid sending it via messengers and even email.
+Please note that after closing "Activate API key" window, you **won't be able to see it again**. Secret will be hidden and you **won’t be able to restore**, please save in a secure place and avoid sending it via messengers and even email.
 {% endhint %}
 
-![](../.gitbook/assets/snimok-ekrana-2019-03-19-v-18.48.13.png)
+![](../.gitbook/assets/image.png)
 

@@ -77,7 +77,7 @@ QR code \(Quick Response code\) is a special visual method of data encoding and 
 
 An example of QR code:
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
 ## Why should I use QR codes on my payment form? <a id="QRcodeimplementation-WhyshouldIuseQRcodesonmypaymentform?"></a>
 
@@ -117,7 +117,7 @@ You can use this link directly inside the &lt;img&gt; tag:
 <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=bitcoin:3AFaCnqriLNxj15kqtp5Pxn8puHfuqbX7W&choe=UTF-8">
 ```
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 **chs** - QR code size \("150x150" size is used as an example\)  
 **cht** - chart type \(**"qr" is necessary for QR code**\)  
