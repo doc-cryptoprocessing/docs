@@ -54,6 +54,12 @@ In case if received and sent amounts don't equal, CP converts it like normal dep
 
 Limit for this operation is 10 000 EUR**.**
 
+#### **Invoice flow**
+
+This feature provides an opportunity to make out an invoice for a B2B or B2C client to a specified amount. ****Detailed information can be found [here](invoices.md).
+
+
+
 ## API Endpoints
 
 {% api-method method="get" host="https://app.coinspaid.com/api" path="/v2/ping" %}
@@ -351,7 +357,7 @@ You are willing to let your customer fund his EUR balance on your platform or we
 **Hint:** you don't have to generate new address for this customer anymore, address can be reused unlimited amount of times.
 {% endhint %}
 
-![Example of the customer facing interface for Deposits. ](../.gitbook/assets/qr_api_2.png)
+![Example of the customer facing interface for Deposits. ](../../.gitbook/assets/qr_api_2.png)
 
 * Make sure to use Bitcoin URI format bitcoin: in QR. Works the same way as "mailto:".
 * We do recommend making this QR clickable as customers may have a wallet set up on their computer or mobile phone.

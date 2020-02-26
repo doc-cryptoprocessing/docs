@@ -10,5 +10,5 @@ Callback retry schedule:
 
 [API V1 callbacks specification](v1.md#callbacks)
 
-[API V2 callbacks specification](v2.md#callbacks)
+[API V2 callbacks specification](v2/#callbacks)
 
