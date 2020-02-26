@@ -56,7 +56,7 @@ Limit for this operation is 10 000 EUR**.**
 
 #### **Invoice flow**
 
-This feature provides an opportunity to make out an invoice for a B2B or B2C client to a specified amount. ****Detailed information can be found [here](invoices.md).
+This feature provides an opportunity to make out an invoice for a B2B or B2C client to a specified amount. Detailed information can be found [here](invoices.md).
 
 
 

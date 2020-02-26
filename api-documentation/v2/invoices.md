@@ -1,3 +1,9 @@
+---
+description: >-
+  This feature provides an opportunity to make out an invoice for a B2B or B2C
+  client to a specified amount.
+---
+
 # Invoices
 
 ## Invoice general flow
