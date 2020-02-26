@@ -28,6 +28,104 @@ After successful confirmation of the transaction, money will be exchanged in a r
 
 If a user sends the amount of money that more or less than specified one we will send a payback guideline on their email.
 
+## API Endpoint
+
+{% api-method method="post" host="https://app.coinspaid.com/api" path="/v2/invoices/create" %}
+{% api-method-summary %}
+Create Invoice
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Create invoice for a client to a specified amount.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="timer" type="boolean" required=true %}
+Time on the rate is fixed for invoice payment \(15 minutes\). During this time a user has to pay an invoice.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="name" type="string" required=true %}
+Invoice name, that will be displayed to a user
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="description" type="string" required=false %}
+Invoice description, that will be displayed to a user
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="currency" type="string" required=true %}
+ISO invoice currency, that you want to receive from a user, for example: **“EUR”**
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="sender\_currency" type="string" required=false %}
+Currency of user invoice payment \(3d type invoice will be externalized at the time of sending this parameter with timer= true\), example: **“BTC“**
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="amount" type="integer" required=true %}
+Invoice amount, that you want to receive from a user, example: **“106.75“**
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="foreign\_id" type="string" required=true %}
+Unique foreign ID in your system, example: "**164**"
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="url\_success" type="string" required=true %}
+URL on which we redirect user in case of successful invoice payment, example: **“https://merchant.name.com/url\_success“**
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="url\_failed" type="string" required=true %}
+URL on which we redirect user in case of unsuccessful invoice payment, example: **“https://merchant.name.com/url\_failed“**
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="email\_user" type="string" required=false %}
+In case the payment amount does not match the amount stated above, we will send an email to this address with instructions on recovery of funds. In case of underpayment, the whole amount will be refunded. In case of overpayment, you will be able to recover the difference by following the instructions.
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Example of success response
+{% endapi-method-response-example-description %}
+
+```typescript
+{
+   "data":{
+      "id":79,
+      "url":"https://app.coinspaid.com/invoice/RB9NZv",
+      "foreign_id":164,
+      "name":"TEST NAME",
+      "status":"created",
+      "currency":"EUR",
+      "amount":"106.75",
+      "sender_currency":"BTC",
+      "sender_amount":null,
+      "fixed_at":1581929889,
+      "release_at":1581930789
+   }
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+Example of response with errors
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+   "errors":{
+      "foreign_id":"The foreign id has already been taken."
+   }
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 ## Invoice Type
 
 ### **1st Type** 
@@ -50,11 +148,11 @@ By following the link a user will see the information about invoice and also wil
 ```
 {% endcode %}
 
-![What is displayed for user.](../../.gitbook/assets/image%20%289%29.png)
+![](../../.gitbook/assets/desktop.png)
 
 After confirming currency and putting email, the rate will be fixed for 15 minutes. During this period of time a user has to pay an invoice using specified address.
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/004%20%282%29.png)
 
 ### **2d Type**
 
@@ -66,7 +164,7 @@ By following the link a user will see the information about invoice, timer and a
 
 {% code title="Request example:" %}
 ```javascript
- :"timer": true,
+ "timer": true,
  "name": "Invoice Title",
  "currency": "EUR",
  "amount": 106.75,
@@ -76,11 +174,11 @@ By following the link a user will see the information about invoice, timer and a
 ```
 {% endcode %}
 
-![What is displayed for user.](../../.gitbook/assets/image%20%283%29.png)
+![](../../.gitbook/assets/002.png)
 
 After confirming currency and putting email, a user has to pay an invoice using specified address before the expiry of the timer.
 
-![](../../.gitbook/assets/image%20%284%29.png)
+![](../../.gitbook/assets/004.png)
 
 ###  **3d Type** 
 
@@ -103,11 +201,11 @@ By following the link a user will see the information about invoice, 15 minutes 
 ```
 {% endcode %}
 
-![What is displayed for user.](../../.gitbook/assets/image%20%2811%29.png)
+![](../../.gitbook/assets/003.png)
 
 After putting email, a user has to pay an invoice using specified address before the expiry of the timer.
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](../../.gitbook/assets/004%20%281%29.png)
 
 ## Invoice failed
 
