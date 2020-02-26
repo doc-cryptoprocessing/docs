@@ -154,7 +154,7 @@ After confirming currency and putting email, the rate will be fixed for 15 minut
 
 ![](../../.gitbook/assets/004%20%282%29.png)
 
-### **2d Type**
+### **2nd Type**
 
 #### Invoice with time restriction 
 
@@ -180,7 +180,7 @@ After confirming currency and putting email, a user has to pay an invoice using 
 
 ![](../../.gitbook/assets/004.png)
 
-###  **3d Type** 
+###  **3rd Type** 
 
 #### Invoice with time restriction and without a possibility to choose payment currency
 
