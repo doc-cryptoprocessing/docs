@@ -152,7 +152,7 @@ By following the link a user will see the information about invoice and also wil
 
 After confirming currency and putting email, the rate will be fixed for 15 minutes. During this period of time a user has to pay an invoice using specified address.
 
-![](../../.gitbook/assets/004%20%282%29.png)
+![](../../.gitbook/assets/004.png)
 
 ### **2nd Type**
 
@@ -178,7 +178,7 @@ By following the link a user will see the information about invoice, timer and a
 
 After confirming currency and putting email, a user has to pay an invoice using specified address before the expiry of the timer.
 
-![](../../.gitbook/assets/004.png)
+![](../../.gitbook/assets/004%20%282%29.png)
 
 ###  **3rd Type** 
 
@@ -205,7 +205,7 @@ By following the link a user will see the information about invoice, 15 minutes 
 
 After putting email, a user has to pay an invoice using specified address before the expiry of the timer.
 
-![](../../.gitbook/assets/004%20%281%29.png)
+![](../../.gitbook/assets/004%20%284%29.png)
 
 ## Invoice failed
 
