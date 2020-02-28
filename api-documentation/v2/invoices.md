@@ -24,7 +24,7 @@ If a user fails to pay invoice in due time the system will display failed status
 
 You will receive a callback about successful transaction creation after it appears in the mempool. We will change the timer from 15 minutes to 24 hours. During this period of time the transaction will change its status to confirmed.
 
-After successful confirmation of the transaction, money will be exchanged in a receiver currency and transferred to your account.
+After successful confirmation of the transaction, money will be exchanged in a receiver currency and transferred to your account. The Merchant is charged a Fee for Operation after the Funds are credited to the account.
 
 If a user sends the amount of money that more or less than specified one we will send a payback guideline on their email.
 
@@ -148,6 +148,27 @@ By following the link a user will see the information about invoice and also wil
 ```
 {% endcode %}
 
+{% code title="Response example:" %}
+```javascript
+{
+   "data":{
+      "id":127,
+      "url":"https://wallet.coinspaid.com/invoice/iEU3uh",
+      "foreign_id":205,
+      "address":null,
+      "name":"Invoice Title",
+      "status":"created",
+      "currency":"EUR",
+      "amount":"106.75000000",
+      "sender_currency":null,
+      "sender_amount":null,
+      "fixed_at":null,
+      "release_at":null
+   }
+}
+```
+{% endcode %}
+
 ![](../../.gitbook/assets/desktop.png)
 
 After confirming currency and putting email, the rate will be fixed for 15 minutes. During this period of time a user has to pay an invoice using specified address.
@@ -171,6 +192,27 @@ By following the link a user will see the information about invoice, timer and a
  "foreign_id": 196,
  "url_success": "http://success.test",
  "url_failed": "http://failed.test",
+```
+{% endcode %}
+
+{% code title="Response example:" %}
+```javascript
+{
+   "data":{
+      "id":130,
+      "url":"https://wallet.coinspaid.com/invoice/XJrbOG",
+      "foreign_id":208,
+      "address":null,
+      "name":"Invoice Title",
+      "status":"created",
+      "currency":"EUR",
+      "amount":"106.75000000",
+      "sender_currency":null,
+      "sender_amount":null,
+      "fixed_at":1582815161,
+      "release_at":1582816061
+   }
+}
 ```
 {% endcode %}
 
@@ -201,6 +243,27 @@ By following the link a user will see the information about invoice, 15 minutes 
 ```
 {% endcode %}
 
+{% code title="Response example:" %}
+```javascript
+{
+   "data":{
+      "id":131,
+      "url":"https://wallet.coinspaid.com/invoice/8ppbsV",
+      "foreign_id":209,
+      "address":"91TESTBTCADDRESS",
+      "name":"Invoice Title",
+      "status":"created",
+      "currency":"EUR",
+      "amount":"106.75000000",
+      "sender_currency":"BTC",
+      "sender_amount":"0.01060080",
+      "fixed_at":1582815352,
+      "release_at":1582816252
+   }
+}
+```
+{% endcode %}
+
 ![](../../.gitbook/assets/003.png)
 
 After putting email, a user has to pay an invoice using specified address before the expiry of the timer.
@@ -218,6 +281,63 @@ Invoice fails on the occurrence of any of the following:
 ## Invoice callbacks
 
 If invoice payment is paid by installments, You will receive a callback for each part.
+
+```javascript
+{
+   "id":2688875,
+   "type":"deposit_exchange",
+   "crypto_address":{
+      "id":384710,
+      "currency":"BTC",
+      "convert_to":"EUR",
+      "address":"0x4b41a526d3d12de36bdf969e7b70fd0bd2e0d265",
+      "tag":null,
+      "foreign_id":"9AW1KI7LesB9yxWcT2T"
+   },
+   "currency_sent":{
+      "currency":"EUR",
+      "amount":"500"
+   },
+   "currency_received":{
+      "currency":"BTC",
+      "amount":"0.05075",
+      "amount_minus_fee":"0.057"
+   },
+   "transactions":[
+      {
+         "id":717557,
+         "currency":"BTC",
+         "transaction_type":"blockchain",
+         "type":"deposit",
+         "address":"0x4b41a526d3d12de36bdf969e7b70fd0bd2e0d265",
+         "tag":null,
+         "amount":"0.0406",
+         "txid":"0x19f9094e12dfc6cb14910d6057269d10f39dfdc7c8b0d0e22b789c3e5d03b9e7",
+         "confirmations":"2"
+      }
+   ],
+   "fees":[
+      {
+         "type":"fee_crypto_deposit_to_fiat",
+         "currency":"BTC",
+         "amount":"0.00075"
+      }
+   ],
+   "invoice":{
+      "id":168,
+      "foreign_id":11,
+      "status":"pending",
+      "currency":"EUR",
+      "sender_currency":"BTC",
+      "amount":"500",
+      "amount_to_pay":"100"
+   },
+   "error":"",
+   "status":"processing"
+}
+```
+
+You will receive a callback about successful transaction creation after it appears in the mempool. We will change the timer from 15 minutes to 24 hours. During this period of time the transaction will change its status to confirmed.
 
 ```javascript
 {
@@ -268,63 +388,6 @@ If invoice payment is paid by installments, You will receive a callback for each
       "sender_currency":"BTC",
       "amount":"500",
       "amount_to_pay":"0"
-   },   
-   "error":"",
-   "status":"processing"
-}
-```
-
-You will receive a callback about successful transaction creation after it appears in the mempool. We will change the timer from 15 minutes to 24 hours. During this period of time the transaction will change its status to confirmed.
-
-```javascript
-{
-   "id":2688875,
-   "type":"deposit_exchange",
-   "crypto_address":{
-      "id":384710,
-      "currency":"BTC",
-      "convert_to":"EUR",
-      "address":"0x4b41a526d3d12de36bdf969e7b70fd0bd2e0d265",
-      "tag":null,
-      "foreign_id":"9AW1KI7LesB9yxWcT2T"
-   },
-   "currency_sent":{
-      "currency":"EUR",
-      "amount":"500"
-   },
-   "currency_received":{
-      "currency":"BTC",
-      "amount":"0.05075",
-      "amount_minus_fee":"0.057"
-   },
-   "transactions":[
-      {
-         "id":717557,
-         "currency":"BTC",
-         "transaction_type":"blockchain",
-         "type":"deposit",
-         "address":"0x4b41a526d3d12de36bdf969e7b70fd0bd2e0d265",
-         "tag":null,
-         "amount":"0.0406",
-         "txid":"0x19f9094e12dfc6cb14910d6057269d10f39dfdc7c8b0d0e22b789c3e5d03b9e7",
-         "confirmations":"2"
-      }
-   ],
-   "fees":[
-      {
-         "type":"fee_crypto_deposit_to_fiat",
-         "currency":"BTC",
-         "amount":"0.00075"
-      }
-   ],
-   "invoice":{
-      "id":168,
-      "foreign_id":11,
-      "status":"pending",
-      "currency":"EUR",
-      "sender_currency":"BTC",
-      "amount":"500",
-      "amount_to_pay":"0.01015"
    },
    "error":"",
    "status":"processing"
@@ -401,7 +464,7 @@ In case of unsuccessful invoice payment you will receive the following callback:
    "currency":"EUR",
    "sender_currency":"BTC",
    "amount":"500",
-   "amount_to_pay":"0.05",
+   "amount_to_pay":"0",
    "transactions":[
       {
          "id":717556,
@@ -438,7 +501,7 @@ Transaction has processing status for more than 24 hours**:**
    "currency":"EUR",
    "sender_currency":"BTC",
    "amount":"500",
-   "amount_to_pay":"0.05",
+   "amount_to_pay":"500",
    "transactions":[
       {
          "id":717556,
@@ -475,25 +538,26 @@ A user paid an amount less than was requested. In this case transaction will hav
    "currency":"EUR",
    "sender_currency":"BTC",
    "amount":"500",
-   "amount_to_pay":"0.05",
+   "amount_to_pay":"100",
    "transactions":[
       {
          "id":717556,
          "currency":"BTC",
          "transaction_type":"blockchain",
          "type":"deposit_exchange",
+         "status":"confirmed",
          "address":"0x4b41a526d3d12de36bdf969e7b70fd0bd2e0d264",
          "tag":null,
-         "amount":"0.05075",
+         "amount":"0.0406",
          "txid":"0x19f9094e12dfc6cb14910d6057269d10f39dfdc7c8b0d0e22b789c3e5d03b9e6",
-         "confirmations":"1"
+         "confirmations":"13"
       }
    ],
    "fees":[
       {
          "type":"fee_crypto_deposit_to_fiat",
          "currency":"BTC",
-         "amount":"0.00075"
+         "amount":"0.0006"
       }
    ],
    "fixed_at":1582620928,
