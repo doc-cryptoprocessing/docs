@@ -79,7 +79,7 @@ URL on which we redirect user in case of unsuccessful invoice payment, example: 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="email\_user" type="string" required=false %}
-In case the payment amount does not match the amount stated above, we will send an email to this address with instructions on recovery of funds. In case of underpayment, the whole amount will be refunded. In case of overpayment, you will be able to recover the difference by following the instructions.
+In case the payment amount does not match the amount stated above, we will send an email to this address with instructions on recovery of funds. In case of underpayment, the whole amount will be refunded. In case of overpayment, user will be able to recover the difference by following the instructions.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
