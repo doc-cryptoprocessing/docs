@@ -41,7 +41,11 @@ Supported Fiat currencies
 
 EUR, USD, CAD, SEK, AUD, NOK, CHF, RUB, CNY, JPY, NZD, MXN, ARS, BRL, GBP, INR, KRW, THB, MYR, PEN, CLP, KZT, UAH
 
-Available trading Pairs
+Available trading Pairs:
 
-Trading available for all fiat currencies with BTC, LTC, ETH and BCH. You can obtain all supported currency pairs via [api call](https://docs.coinspaid.com/docs/api-documentation/v2#get-list-of-exchangeable-currency-pairs).
+* all fiat currencies with BTC, LTC, ETH, XRP and BCH
+* USDTE with BTC and EUR
+* LTC, ETH, BCH and DOGE with BTC
+
+You can obtain all supported currency pairs via [api call](https://docs.coinspaid.com/docs/api-documentation/v2#get-list-of-exchangeable-currency-pairs).
 
