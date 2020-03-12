@@ -17,9 +17,9 @@ When user gets an address for the first time he is able to save it into his cryp
 
 As cryptocurrencies are based on the blockchain technologies, you can not delete the address if it is already has been created and has been written into the blockchain.
 
-If the user knows this address he always can send the money there. Because it is not necessary  for the user to interact with the payment form when he would like to send the money.
+If the user knows this address he always can send the money there. Because it is not necessary for the user to interact with the payment form when he would like to send the money.
 
-Even if you show the users new addresses every time, they always can make the deposit to the older one. And they expect that they will see their money on your website. 
+Even if you show the users new addresses every time, they always can make the deposit to the older one. And they expect that they will see their money on your website.
 {% endhint %}
 
 ### Common deposit workflow
@@ -90,7 +90,7 @@ In case you would like to hold exchange rate for 10 minutes in order to receive 
 #### Hint 4
 
 As we keep a small amount of incoming funds as our fees, we provide you with the information about fees in the callback.  
-It is on your choice what amount you will add to user's balance: including fees or not.  
+It is on your choice what amount you will add to user's balance: including fees or not.
 {% endhint %}
 
 ## Withdrawals
@@ -122,7 +122,7 @@ You can define what currency should be used to send the funds. And if it necessa
 {% hint style="warning" %}
 #### Attention
 
-Unlike "**/v2/addresses/take**" method, you should use unique "foreign\_id" every time you make a withdrawal request to our system. 
+Unlike "**/v2/addresses/take**" method, you should use unique "foreign\_id" every time you make a withdrawal request to our system.
 {% endhint %}
 
 ## Callbacks
@@ -141,7 +141,7 @@ Every time, when user makes a deposit or our system sends a withdrawal into the 
 {% hint style="warning" %}
 #### Attention
 
-As our system supports instant confirmations it means that some deposits will be confirmed in our system without confirmations in the blockchain. In this case you will receive the only one callback for the transaction. The parameter **"status**" will have the value  **"confirmed".** When we confirm the transaction we are ready to manage all the risks concerning to accepting real funds later. You should not be concerned about it.
+As our system supports instant confirmations it means that some deposits will be confirmed in our system without confirmations in the blockchain. In this case you will receive the only one callback for the transaction. The parameter **"status**" will have the value **"confirmed".** When we confirm the transaction we are ready to manage all the risks concerning to accepting real funds later. You should not be concerned about it.
 
 In other case you will first receive the callback with **"not\_confirmed"** status. It will mean that we found the transaction in the mempool but we are not ready to guarantee that it will be received. When it happens you can create the transaction on your side but assign it status **"pending"**. After that you should wait for the second callback where the value of **"status"** parameter will be **"confirmed".**
 {% endhint %}
@@ -152,7 +152,7 @@ In other case you will first receive the callback with **"not\_confirmed"** stat
 You have to validate a signature of the callback and values of known parameters in order to avoid fraudulent activity.
 {% endhint %}
 
-In case of successful validation of the callback your system have to response with **HTTP Code: 200 OK.** No additional parameters are required in the response "body". 
+In case of successful validation of the callback your system have to response with **HTTP Code: 200 OK.** No additional parameters are required in the response "body".
 
 Other way we will keep the callback in our sending queue and will continue the attempts according to schedule mentioned here: [Callbacks](../api-documentation/callbacks.md).
 
@@ -196,6 +196,4 @@ Here you can find the information about the minimum number of the confirmations 
 
 * [Confirmations and limits](../confirmations-and-limits.md)
 {% endhint %}
-
-
 

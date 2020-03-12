@@ -14,13 +14,13 @@ API endpoint for all requests is:
 https://app.coinspaid.com/api/v2
 ```
 
-#### Deposit flow
+### Deposit flow
 
 1. You obtain new address from CoinsPaid API \(for some currencies it may be address and tag\) and store it somewhere on your side. After that you show this address to your customer in order to make a deposit.
 2. Customer sends some funds to this address.  
 3. When transaction is sent by a customer - CoinsPaid sends a callback to your callback url with transaction details. It contains status, address, currency, amount and fees.  If status is successful, you should deposit respective amount to customer balance on your side.
 
-#### Withdrawal flow
+### Withdrawal flow
 
 1. You request to send amount of money to address.
 2. Your request is validated on our side. If signature is correct, address is valid and you have enough balance - CoinsPaid responds you with the transaction object.
@@ -28,14 +28,14 @@ https://app.coinspaid.com/api/v2
 
 **Deposit with exchange flow**
 
-You don't want to touch or store cryptocurrency, but only use it as a payment method. Your customer deposits **BTC**, ****Coinspaid instantly converts it to **EUR** so that **you would receive EUR on your CoinsPaid account.**
+You don't want to touch or store cryptocurrency, but only use it as a payment method. Your customer deposits **BTC**, **\*\*Coinspaid instantly converts it to** EUR **so that** you would receive EUR on your CoinsPaid account.\*\*
 
 1. You obtain new address from CoinsPaid API same as in deposit flow, but additionally pass another parameter "convert\_to" in your request specifying resulting currency.
 2. When new deposit is arriving, CoinsPaid converts all arriving funds to destination funds, and sends notifications as in regular deposit
 
 **Withdrawal with exchange flow**
 
-You wish to send Cryptocurrency from your Fiat currency balance. For example you want to **send EUR amount** but your customer ****receives ****money **in BTC.**
+You wish to send Cryptocurrency from your Fiat currency balance. For example you want to **send EUR amount** but your customer **receives** money **in BTC.**
 
 1. You do exactly same as in withdrawals, but you specify 2 currencies. One is a currency of your **sending balance** and Second is a **cryptocurrency your Customer wishes to receive**.
 2. Your request is validated on our side. If signature is correct, address is valid and you have enough balance - CoinsPaid responds you with the transaction object.
@@ -43,7 +43,7 @@ You wish to send Cryptocurrency from your Fiat currency balance. For example you
 
 **Futures flow**
 
-In order to guarantee receiving amount, rates should be fixed. 
+In order to guarantee receiving amount, rates should be fixed.
 
 1. You send address for exchange \(If it is not necessary to receive exchange rates you can skip this step\)
 2. You receive rates and their fixation time 
@@ -54,90 +54,27 @@ In case if received and sent amounts don't equal, CP converts it like normal dep
 
 Limit for this operation is 10 000 EUR**.**
 
-#### **Invoice flow**
+### **Invoice flow**
 
 This feature provides an opportunity to make out an invoice for a B2B or B2C client to a specified amount. Detailed information can be found [here](invoices.md).
-
-
 
 ## API Endpoints
 
 {% api-method method="get" host="https://app.coinspaid.com/api" path="/v2/ping" %}
-{% api-method-summary %}
-Ping
-{% endapi-method-summary %}
-
-{% api-method-description %}
-Test if API is up and running and your authorization is working
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-OK
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
 
 {% hint style="info" %}
 Body must be a valid json object or array, example: {}
 {% endhint %}
 
 {% api-method method="post" host="https://app.coinspaid.com/api" path="/v2/currencies/list" %}
-{% api-method-summary %}
-Get list of supported currencies
-{% endapi-method-summary %}
-
-{% api-method-description %}
-Get all supported currencies
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-  "data": [
-    {
-      "id": 1,
-      "type": "crypto",
-      "currency": "BTC",
-      "minimum_amount": "0.001",
-      "deposit_fee_percent": "0.99",
-      "withdrawal_fee_percent": "0",
-      "precision": 8
-    }
-  ]
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
 
 {% api-method method="post" host="https://app.coinspaid.com/api" path="/v2/currencies/pairs" %}
 {% api-method-summary %}
-Get list of exchangeable currency pairs
+
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get list of currency pairs if no parameters passed.  
-Get particular pair and its price if currency parameters are passed.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -159,7 +96,7 @@ Filter by currency ISO that can be converted to, example: **EUR**
 Example of success response
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "data": [
     {
@@ -226,7 +163,7 @@ Example of success response
 Example of response with errors
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "errors": {
         "currency_from": "The selected currency from is invalid.",
@@ -240,57 +177,10 @@ Example of response with errors
 {% endapi-method %}
 
 {% api-method method="post" host="https://app.coinspaid.com/api" path="/v2/accounts/list" %}
-{% api-method-summary %}
-Get list of balances
-{% endapi-method-summary %}
-
-{% api-method-description %}
-Get list of all the balances \(including zero balances\).
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    "data": [
-        {
-            "currency": "DOGE",
-            "type": "crypto",
-            "balance": "13234.91276375"
-        },
-        {    
-            "currency": "ADA",
-            "type": "crypto",
-            "balance": "7272.36400468"
-        },
-        {
-            "currency": "EUR",
-            "type": "fiat",
-            "balance": "5973.97568920"
-        },
-        {
-            "currency": "USDT",
-            "type": "crypto",
-            "balance": "0.00000000"
-        }
-    ]
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
 
 {% api-method method="post" host="https://app.coinspaid.com/api" path="/v2/addresses/take" %}
 {% api-method-summary %}
-Receive cryptocurrency
+
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -320,7 +210,7 @@ If you need auto exchange all incoming funds for example to **EUR**, specify thi
 Example of success response
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "data": {
     "id": 1,
@@ -339,7 +229,7 @@ Example of success response
 Example of response with errors
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "errors": {
         "foreign_id": "The foreign id field is required."
@@ -352,7 +242,7 @@ Example of response with errors
 {% endapi-method %}
 
 {% hint style="info" %}
-Business logic for using cryptocurrency as a deposit method:   
+Business logic for using cryptocurrency as a deposit method:  
 You are willing to let your customer fund his EUR balance on your platform or website. You will have to generate an address in the desired cryptocurrency and specify EUR as a "convert\_to" currency. This will allow you to let your Customer pay if his favorite currency and fund his balance in EUR. At the same time you will see respective EUR amount in your CoinsPaid merchant account.  
 **Hint:** you don't have to generate new address for this customer anymore, address can be reused unlimited amount of times.
 {% endhint %}
@@ -407,7 +297,7 @@ Tag \(if it's Ripple or BNB\) or memo \(if it's Bitshares or EOS\)
 Example of success response of withdraw without conversion
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "data": {
     "id": 1,
@@ -429,7 +319,7 @@ Example of success response of withdraw without conversion
 Example of response with errors
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "errors": {
     "amount": "The amount must be at least 0.001."
@@ -446,9 +336,9 @@ Recommendation: ask customer to specify his payout address even before allowing 
 {% endhint %}
 
 {% hint style="info" %}
-Business logic for using cryptocurrency as a withdrawal method:   
-Your customer requests a payout in Cryptocurrency from his EUR balance on your platform. You have to specify withdrawal **amount in EUR** and **specify Cryptocurrency and its destination** \(sometimes it is not only Address\).   
-Example of such request &lt;_Send 3500 EUR to Bitcoin  3D2V3tushw7VLJYnK6vZVDpNcNmEG2a7QK_"&gt;.
+Business logic for using cryptocurrency as a withdrawal method:  
+Your customer requests a payout in Cryptocurrency from his EUR balance on your platform. You have to specify withdrawal **amount in EUR** and **specify Cryptocurrency and its destination** \(sometimes it is not only Address\).  
+Example of such request &lt;_Send 3500 EUR to Bitcoin 3D2V3tushw7VLJYnK6vZVDpNcNmEG2a7QK_"&gt;.
 {% endhint %}
 
 {% api-method method="post" host="https://app.coinspaid.com/api" path="/v2/exchange/calculate" %}
@@ -487,7 +377,7 @@ Amount you want to calculate, example: **"3".** The parameter is required when t
 Example of success response
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "data": {
     "sender_amount": 1,
@@ -510,7 +400,7 @@ Example of success response
 Example of response with errors
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "errors": {
     "sender_currency": "Exchange is unavailable for given currencies"
@@ -562,7 +452,7 @@ Exchange rate price on which exchange will be placed, example: **"89.75202000"**
 Example of success response
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "data": {
      "id": 2687667,
@@ -586,7 +476,7 @@ Example of success response
 
 {% api-method method="post" host="https://app.coinspaid.com/api" path="/v2/exchange/now" %}
 {% api-method-summary %}
-Exchange regardless the exchange rate 
+Exchange regardless the exchange rate
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -620,7 +510,7 @@ Unique foreign ID in your system, example: **"124876"**
 Example of success response
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "data": {
      "id": 2687669,
@@ -644,7 +534,7 @@ Example of success response
 Example of response with errors
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "errors": {
     "sender_amount": "The amount must be at least 0.00300000 "
@@ -680,7 +570,7 @@ Exchange address for which you want to calculate futures' rates
 Example of success response
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "data": {
         "addresses": [
@@ -716,7 +606,7 @@ Example of success response
 Example of response with errors
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "errors": {
         "address": "Address is not found, incorrect or without exchange"
@@ -764,7 +654,7 @@ Amount you want to receive
 Example of success response
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "data": {
         "futures_id": 92,
@@ -795,7 +685,7 @@ Example of success response
 Example of response with errors
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "errors": {
         "address": "Address is not found, incorrect or without exchange. Error can be related to incorrect sender or receiver currencies."

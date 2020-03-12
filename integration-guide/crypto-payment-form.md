@@ -77,7 +77,7 @@ QR code \(Quick Response code\) is a special visual method of data encoding and 
 
 An example of QR code:
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image-8.png)
 
 ## Why should I use QR codes on my payment form? <a id="QRcodeimplementation-WhyshouldIuseQRcodesonmypaymentform?"></a>
 
@@ -117,7 +117,7 @@ You can use this link directly inside the &lt;img&gt; tag:
 <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=bitcoin:3AFaCnqriLNxj15kqtp5Pxn8puHfuqbX7W&choe=UTF-8">
 ```
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](https://github.com/doc-cryptoprocessing/docs/tree/7fb4bc8920883c32d0f3baf09a3a94e4dd568f4d/.gitbook/assets/image%20%2813%29.png)
 
 **chs** - QR code size \("150x150" size is used as an example\)  
 **cht** - chart type \(**"qr" is necessary for QR code**\)  
@@ -151,6 +151,4 @@ To make this experience even better, it will be a good idea to provide the payme
 As a result it will be a good form that may look like this:
 
 ![](../.gitbook/assets/deposit-or-bitstarz.com-2019-10-04-15-31-35.png)
-
-
 

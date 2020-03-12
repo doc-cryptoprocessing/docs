@@ -1,7 +1,5 @@
 # General description
 
-
-
 CoinsPaid is an organisation providing Cryptocurrency payment services, we enable businesses to operate worldwide, decrease costs, reach new markets by empowering companies with reliable cryptocurrency processing methods. We support over 50 cryptocurrencies and counting.
 
 What makes us better than others?
